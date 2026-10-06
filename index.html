@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d36">
+  <meta name="description" content="Okuw merkezinde kurslary we diňleýjileri dolandyrmak ulgamy">
+  <title>Okuw — Dolandyryş paneli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home"><span class="brandmark">o<span></span></span>okuw<span class="branddot">.</span></a>
+    <div class="workspace">
+      <span class="workspace-icon">O</span>
+      <div><strong>Okuw merkezi</strong><small>Dolandyryş ulgamy</small></div>
+      <span>⌄</span>
+    </div>
+    <p class="nav-label">IŞ MEÝDANY</p>
+    <nav id="nav"></nav>
+    <div class="sidebar-bottom">
+      <div class="motto">
+        <span>✧</span>
+        <strong>Bilime ýol açyň.</strong>
+        <p>Her bir diňleýjiniň ösüşi bir ädimden başlanýar.</p>
+      </div>
+      <div class="profile">
+        <span class="avatar">AD</span>
+        <div><strong>Administrator</strong><small>Okuw merkeziniň dolandyryjysy</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="shell">
+    <header>
+      <div class="crumb">Iş meýdany <span>/</span> <strong id="crumb">Baş sahypa</strong></div>
+      <div class="header-right">
+        <span class="today" id="today"></span>
+        <span class="lang">TK</span>
+        <span class="avatar small">AD</span>
+      </div>
+    </header>
+    <main>
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">OKUW MERKEZINIŇ DOLANDYRYŞ PANELI</p>
+          <h1 id="title">Günüňiz haýyrly bolsun! <span class="sun">☀</span></h1>
+          <p class="muted" id="subtitle"></p>
+        </div>
+        <button class="primary" id="add-btn">＋ Diňleýji goş</button>
+      </div>
+      <div id="content"></div>
+      <footer>
+        <span>okuw. <span class="muted">Bilimi dolandyrmagyň täze usuly.</span></span>
+        <span>© <span id="year"></span> Okuw merkezi</span>
+      </footer>
+    </main>
+  </div>
+
+  <dialog id="modal">
+    <form id="form">
+      <div class="modal-head">
+        <h2 id="modal-title"></h2>
+        <button type="button" class="close" aria-label="Ýap">×</button>
+      </div>
+      <div id="fields"></div>
+      <div class="form-actions">
+        <button type="button" class="danger-btn" id="delete-btn" hidden>Poz</button>
+        <button type="button" class="secondary close">Ýatyr</button>
+        <button class="primary" type="submit">Ýatda sakla</button>
+      </div>
+    </form>
+  </dialog>
+  <div id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
